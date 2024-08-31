@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --body-color: rgb(250, 250, 250);
+  --color-white: rgb(255, 255, 255);
+
+  --text-color-second: rgb(68, 68, 68);
+  --text-color-third: #345246;
+
+  --first-color: rgb(28, 209, 170);
+  --first-color-hover: rgb(10, 77, 78);
+
+  --second-color: #90b293;
+  --third-color: rgb(192, 166, 49);
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--first-color);
+}
+
+.btn {
+  font-weight: 500;
+  padding: 12px 20px;
+  background: var(--second-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn > i {
+  margin-left: 10px;
+}
+.btn:hover {
+  background: var(--first-color);
+  color: var(--color-white);
+}
+
+i {
+  font-size: 16px;
+}
+
+body {
+  background: var(--body-color);
+}
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper {
+  padding-inline: 10vw;
+}
+
+.featured-box {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  min-height: 700px;
+}
+
+/* ----- FEATURED TEXT BOX ----- */
+.featured-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+}
+.featured-text-card span {
+  color: var(--second-color);
+  padding: 3px 8px;
+  font-size: 40px;
+}
+.featured-name {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--text-color-second);
+  margin-block: 20px;
+}
+.typedText {
+  text-transform: capitalize;
+  color: var(--text-color-third);
+}
+.featured-text-info {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: var(--text-color-second);
+}
+.featured-text-btn {
+  display: flex;
+  gap: 25px;
+  margin-top: 50px;
+}
+.featured-text-btn .btn {
+  padding: 18px 25px;
+}
+.featured-text-btn .btn i {
+  margin-left: 10px;
+}
+
+.featured-img-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.featured-img-box img {
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px var(--first-shadow-color);
+}
+
+/* ---- Button ----- */
+.primary-btn {
+  background: var(--first-color);
+  color: var(--color-white);
+}
+.primary-btn:hover {
+  background: var(--first-color-hover);
+  color: var(--color-white);
+}
+
+/* ===== Header Style ===== */
+.header {
+  background-color: var(--first-color);
+  padding: 2em;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* ====== Team Section ===== */
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.team-details {
+  text-align: center;
+}
+
+.team-details h2 {
+  font-size: 28px;
+  margin-bottom: 1em;
+}
+
+.team-details img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-top: 1em;
+  font-weight: 600;
+  color: var(--text-color-third);
+}
+
+/* ===== Content Section ===== */
+.content {
+  margin: 2em auto;
+  width: 80%;
+  text-align: left;
+}
+
+.content h2 {
+  font-size: 28px;
+  color: var(--text-color-third);
+  margin-bottom: 1em;
+}
+
+.content p {
+  font-size: 16px;
+  color: var(--text-color-second);
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.functions {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.functions li {
+  font-size: 16px;
+  color: var(--text-color-second);
+  margin-bottom: 0.5em;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--first-color);
+  text-align: center;
+  padding: 1em 0;
+  color: var(--color-white);
+}
+
+.footer p {
+  font-size: 14px;
+}
