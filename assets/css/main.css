@@ -529,6 +529,24 @@ textarea {
   rotate: -45deg;
 }
 
+.lab {
+  color: #022014;
+  padding-left: 15px;
+  text-align: center;
+}
+
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.tech-logo {
+  height: 40px;
+  width: auto;
+  margin: 0 10px;
+}
+
 footer {
   display: flex;
   justify-content: center;

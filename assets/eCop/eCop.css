@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --body-color: rgb(250, 250, 250);
+  --color-white: rgb(255, 255, 255);
+
+  --text-color-second: rgb(68, 68, 68);
+  --text-color-third: #345246;
+
+  --first-color: rgb(28, 209, 170);
+  --first-color-hover: rgb(10, 77, 78);
+
+  --second-color: #90b293;
+  --third-color: rgb(192, 166, 49);
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--body-color);
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: var(--first-color);
+  padding: 2em;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.header p {
+  font-size: 18px;
+}
+.head {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content {
+  flex: 1; /* This makes sure the content area expands to fill the space */
+}
+
+.footer {
+  background-color: var(--first-color);
+  text-align: center;
+  padding: 1em 0;
+  color: var(--color-white);
+}
+
+.footer p {
+  font-size: 14px;
+}
