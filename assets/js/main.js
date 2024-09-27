@@ -95,3 +95,37 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Get form data
+    const formData = new FormData(this);
+
+    // Send form data using fetch API
+    try {
+      const response = await fetch("https://formspree.io/f/xnnaejjk", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        // Clear form inputs on success
+        this.reset();
+
+        // Display success message
+        alert("Message sent successfully!");
+      } else {
+        // Handle error
+        alert("There was an issue sending your message. Please try again.");
+      }
+    } catch (error) {
+      // Handle network error
+      alert("An error occurred. Please try again.");
+    }
+  });
